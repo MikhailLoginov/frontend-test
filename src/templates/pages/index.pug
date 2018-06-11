@@ -4,6 +4,8 @@ include ../blocks/hero/hero
 include ../blocks/footer/footer
 
 block content
+  .container
     +header()
-    +hero()
-    +footer()
+    .content-container
+      +hero()
+      +footer()

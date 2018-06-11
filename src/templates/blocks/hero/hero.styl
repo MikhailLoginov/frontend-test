@@ -1,8 +1,131 @@
 .hero
-  float left
-  width 639px
+  background-color #f7f8f8
   .ttl
     background-color #00aeef
-    p
-      font-family 'arial'
-      font-size 14px
+    padding 33px 0 25px 30px
+    .h3
+      width 432px
+
+.payment
+  .h4
+    padding 50px 0 10px 30px
+  &__table
+    color #8494ab
+    font-size 16px
+    font-weight 400
+    margin-left 30px
+    td
+      width 160px
+      &:last-child
+        color #373c43
+  .h2
+    padding 30px 0 0 30px
+
+.card
+  position relative
+  &__front
+    background-color #f7f8f8
+    position relative
+    z-index 10
+    width 350px
+    height 236px
+    border 1px solid #e4e9ee
+    border-radius 10px
+    margin-left 30px
+    .h4
+      padding 15px 0 0 14px
+      margin 0
+    input
+      color #373c43
+      width 65px
+      height 42px
+      border 1px solid #e4e9ee
+      margin 0 -10px 0 14px
+      padding 0 10px 0 10px
+    select
+      -webkit-appearance none
+      -moz-appearance none
+      -ms-appearance none
+      appearance none
+      margin-left 14px
+      color #373c43
+      height 42px
+      border 1px solid #e4e9ee
+      padding 0 15px 0 15px
+      background-image url(/assets/images/arrow.png)
+      background-repeat no-repeat
+      cursor pointer
+
+    .holder-name
+      width 319px
+      margin 10px 14px 0 14px
+      padding 0 10px 0 10px
+      &::-webkit-input-placeholder 
+        color #bec6cf
+      &::-moz-placeholder          
+        color #bec6cf
+      &:-moz-placeholder
+        color #bec6cf
+      &:-ms-input-placeholder
+        color #bec6cf
+  &__month
+    width 70px
+    background-position 42px center
+  &__year
+    width 86px
+    background-position 60px center
+  &__reverse
+    width 350px
+    height 236px
+    border 1px solid #e4e9ee
+    border-radius 10px
+    position absolute
+    right 40px
+    top 20px
+    .h4
+      float right
+      padding 15px 30px 3px 50px
+      margin 0
+    .code
+      position relative
+      border 1px solid #e4e9ee
+      width 138px
+      height 42px
+      margin-right 20px
+      float right
+      padding 0 40px 0 10px
+    img
+      position absolute 
+      right 27px
+      top 116px
+      cursor pointer
+  &__line
+    height 42px
+    background-color #e4e9ee
+    width 100%
+    margin-top 25px
+
+.btn-pay
+  font-size 14px
+  font-family Open Sans, sans-serif
+  color white
+  margin 45px 0 60px 30px
+  width 173px
+  height 40px
+  background-color #95bf00
+  background 
+    -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%)
+  background 
+    -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%)
+  background 
+    -o-linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%)
+  background 
+    -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%)
+  background 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%)
+  border-radius 3px
+  padding 0
+  outline 0
+  border 0
+  cursor pointer
+     

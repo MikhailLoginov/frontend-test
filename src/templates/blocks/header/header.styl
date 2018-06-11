@@ -1,23 +1,38 @@
 .header
   width 318px
-  float left
   background-color #1f2229
+  height 538px
 
 .logo
-  margin 155px 0 155px 40px
+  margin 66px 0 66px 40px
+  padding 5px 0 5px 10px
+  letter-spacing 3px
   text-transform uppercase
   background-color white
   height 36px
-  width 150px
+  width 138px
   font-size 18px
+  span
+    padding-left 12px
+    color white
 
 .navbar
   color white
 
   ul
+    padding 0
     li
+      border-top 1px solid #2a2d37
       list-style-type none
       height 75px
       font-size 18px
       font-weight 700
-      font-family 'Open Sans', sans-serif;
+      font-family Open Sans, sans-serif
+      padding 20px 0 0 30px
+      cursor pointer
+      &:last-child
+        background-color #191c24
+      &:nth-last-child(2)
+        background-color #191c24   
+      &.active
+        background-color #2a2d37

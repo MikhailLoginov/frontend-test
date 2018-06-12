@@ -1,10 +1,11 @@
 mixin hero()
+  // Main block starts 
   MAIN.hero
-    +b.ttl
-      h1.h1 Заголовок страницы
-      h3.h3 В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол
+    +b.title
+      h1 Заголовок страницы
+      h3 В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол
     +b.payment
-      h4.h4 Информация по оплате
+      h4 Информация по оплате
       +e.TABLE.table
         tr
           td Номер счета:
@@ -12,16 +13,16 @@ mixin hero()
         tr
           td Сумма платежа:
           td 100 руб.
-      h2.h2 Данные банковской карты
+      h2 Данные банковской карты
       form.card-info
         +b.card
           +e.front
-            h4.h4 Номер карты
-            INPUT(name="number1", pattern="[0-9]")
+            h4 Номер карты
+            INPUT(name="number1")
             INPUT(name="number2")
             INPUT(name="number3")
             INPUT(name="number4")
-            h4.h4 Срок действия
+            h4 Срок действия
             +e.SELECT.month
               - for(let i = 1; i <= 12; i++)
                 if i < 10 
@@ -34,7 +35,8 @@ mixin hero()
             INPUT(name="name" placeholder="Держатель карты").holder-name
           +e.reverse
             +e.line
-            h4.h4 Код CVV2 / CVC2
-            INPUT(name="code").code
-            img(src="/assets/images/question.png", alt="?")
+            h4 Код CVV2 / CVC2
+            +e.INPUT(name="code").code
+            IMG(src="/assets/images/question.png", alt="?")
         +b.BUTTON(type="submit").btn-pay Оплатить
+  // Main block ends 

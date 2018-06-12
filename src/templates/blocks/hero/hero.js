@@ -1,3 +1,5 @@
+// Form validation starts
+
 $(".card-info").validate({
   errorClass: "invalid",
   errorPlacement: function(error, element) {},
@@ -54,3 +56,5 @@ $.validator.addMethod('lettersVal',
     }
     return true;
   }, "Допустимы только латинские буквы");
+
+// Form validation ends

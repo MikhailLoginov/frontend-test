@@ -13,27 +13,28 @@ mixin hero()
           td Сумма платежа:
           td 100 руб.
       h2.h2 Данные банковской карты
-      +b.card
-        +e.front
-          h4.h4 Номер карты
-          INPUT
-          INPUT
-          INPUT
-          INPUT
-          h4.h4 Срок действия
-          +e.SELECT.month
-            - for(let i = 1; i <= 12; i++)
-              if i < 10 
-                OPTION= "0"+i
-              else
-                OPTION= i
-          +e.SELECT.year
-            - for(let i = 0; i < 10; i++)
-              OPTION= 2018 + i
-          INPUT.holder-name(placeholder="Держатель карты")
-        +e.reverse
-          +e.line
-          h4.h4 Код CVV2 / CVC2
-          INPUT.code
-          img(src="/assets/images/question.png", alt="?")
-      +b.BUTTON.btn-pay Оплатить
+      form.card-info
+        +b.card
+          +e.front
+            h4.h4 Номер карты
+            INPUT(name="number1", pattern="[0-9]")
+            INPUT(name="number2")
+            INPUT(name="number3")
+            INPUT(name="number4")
+            h4.h4 Срок действия
+            +e.SELECT.month
+              - for(let i = 1; i <= 12; i++)
+                if i < 10 
+                  OPTION= "0"+i
+                else
+                  OPTION= i
+            +e.SELECT.year
+              - for(let i = 0; i < 10; i++)
+                OPTION= 2018 + i
+            INPUT(name="name" placeholder="Держатель карты").holder-name
+          +e.reverse
+            +e.line
+            h4.h4 Код CVV2 / CVC2
+            INPUT(name="code").code
+            img(src="/assets/images/question.png", alt="?")
+        +b.BUTTON(type="submit").btn-pay Оплатить

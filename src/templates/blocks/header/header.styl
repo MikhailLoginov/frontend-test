@@ -25,32 +25,33 @@
     margin-left 10px
 
 .navbar
-  color white
+  display flex
+  flex-direction column
 
-  ul
-    margin 0
-    padding 0
-    li
-      border-top 1px solid #2a2d37
-      list-style-type none
-      font-size 18px
-      font-weight 700
-      font-family Open Sans, sans-serif
-      padding 23px 0 24px 28px
-      cursor pointer
-      &:last-child
-        background-color #191c24
-        color #808592
-      &:nth-last-child(2)
-        background-color #191c24
-        color #808592
-      &.active
-        background-color #2a2d37
-        color #808592
-      +below(980px)
-        padding 12px 0 12px 28px
-      +below(400px)
-        padding-left 10px
-
+  a
+    color white
+    width 100%
+    border-top 1px solid #2a2d37
+    text-decoration none
+    font-size 18px
+    font-weight 700
+    font-family Open Sans, sans-serif
+    padding 23px 0 24px 28px
+    &:last-child
+      background-color #191c24
+      color #808592
+    &:nth-last-child(2)
+      background-color #191c24
+      color #808592
+    &.active
+      background-color #2a2d37
+      color #808592
+    +below(980px)
+      padding 12px 0 12px 28px
+    +below(400px)
+      padding-left 10px
+    &:hover
+      background-color #2a2d37
+      color #808592
 
 

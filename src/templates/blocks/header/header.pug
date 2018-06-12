@@ -3,9 +3,8 @@ mixin header()
     +b.logo chulakov
       +e.SPAN ru
     nav( role="navigation").navbar
-      ul.navigation
-        li Первая ссылка
-        li.active Вторая ссылка (активная)
-        li Третья ссылка
-        li Личный кабинет
-        li Выйти
+      a(href="#") Первая ссылка
+      a(href="#").active Вторая ссылка (активная)
+      a(href="#") Третья ссылка
+      a(href="#") Личный кабинет
+      a(href="#") Выйти

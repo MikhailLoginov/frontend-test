@@ -1,72 +1,49 @@
-html
-  box-sizing border-box
-
-*,
-*:before,
-*:after
-  box-sizing inherit
-
-:disabled, [disabled], [aria-disabled="true"]
-  cursor not-allowed
-
-.clearfix:after
-    content ""
-    display block
-    clear both
-
-a
-  -webkit-text-decoration-skip: ink
-  text-decoration-skip: ink
-
 body
-  background-color #07080c
-  font-family Arial, sans-serif
-  font-weight 400
 
 .container
   display flex
   flex-wrap wrap
   margin 86px auto
-  width 960px
+  max-width 960px
+  +below(980px)
+    margin 0 auto
 
 .content-container
   width 639px
   margin-left 2px
+  +below(980px)
+    width 100%
+    margin 0
 
 h1
   font-size 35px
   font-family Open Sans, sans-serif
+  +below(450px)
+    font-size 25px
 
 h2
   font-size 22px
   color #383d43
+  font-family Open Sans, sans-serif
+  font-weight 700
+  +below(450px)
+    font-size 20px
 
 h3
-  font-size 14px
+  font-size 13px
   font-weight 400
-
+  letter-spacing .45px
+  +below(450px)
+    font-size 12px
 h4
   color #8494ab
   font-size 16px
   font-weight 400
+  +below(450px)
+    font-size 14px
 
 p
   color #89909d
   font-size 12px
   font-weight 400
   margin 0
-  padding-bottom 14px
-
-.visuallyhidden:not(:focus):not(:active)
-  position: absolute
-  width: 1px
-  height: 1px
-  margin: -1px
-  border: 0
-  padding: 0
-  clip-path: inset(100%)
-  clip: rect(0 0 0 0)
-  overflow: hidden
-
-.svg-sprite
-  display none
